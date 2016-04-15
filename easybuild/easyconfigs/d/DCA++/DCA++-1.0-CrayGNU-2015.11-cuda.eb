@@ -5,9 +5,9 @@ version = '1.0'
 versionsuffix = '-cuda'
 
 homepage = 'http://www.itp.phys.ethz.ch/research/comp/computation.html'
-description = """This module bundles all the dependencies for DCA++. The DCA++ software project is a C++ 
- implementation of the dynamical cluster approximation (DCA) and its DCA+ extension. It aims to solve lattice 
- models of strongly correlated electron systems."""
+description = """The DCA++ software project is a C++ implementation of the dynamical cluster approximation (DCA) 
+ and its DCA+ extension. It aims to solve lattice models of strongly correlated electron systems.
+ This module bundles all the dependencies of DCA++."""
 
 toolchain = {'name': 'CrayGNU', 'version': '2015.11'}
 

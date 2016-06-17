@@ -15,8 +15,8 @@ description = """ cutadapt removes adapter sequences from high-throughput sequen
 
 toolchain = {'name': 'intel', 'version': '2015a'}
 
-source_urls = ['https://github.com/marcelm/cutadapt/archive/']
-sources = ['v%(version)s.tar.gz']
+source_urls = [PYPI_SOURCE]
+sources = [SOURCELOWER_TAR_GZ]
 
 python = 'Python'
 pyver = '2.7.9'
@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 sanity_check_paths = {
-    'files': ['bin/cutadapt','lib/python%s/site-packages/cutadapt/_align.so' % pyshortver],
+    'files': ['bin/cutadapt', 'lib/python%s/site-packages/cutadapt/_align.%s' % (pyshortver, SHLIB_EXT)],
     'dirs': [],
 }
 

@@ -37,4 +37,7 @@ builddependencies = [
     ('libxml2', '2.9.3'),
 ]
 
+# skip tests as they call the MPI executable gmx_mpi and would fail on the login nodes
+runtest = False
+
 moduleclass = 'bio'
